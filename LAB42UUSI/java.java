@@ -12,7 +12,11 @@ private int amount; //Amount in storage
 public Product(String name, double price, int amount) {
 this.name = name;
 this.price = price;
-this.amount = amount;
+this.amount = changeValue(5);
+}
+public int changeValue(int newvalue){
+    amount = newvalue;
+    return amount;
 }
 public double countValue() {
 return(amount * price);
