@@ -1,6 +1,7 @@
 public class java {
 public static void main(String[] args) {
 Product product = new Product("Edam", 3.3, 120);
+product.changePrice(20);
 System.out.println("Product value is " + product.countValue());
 product.printProduct();
 }
@@ -17,6 +18,10 @@ this.amount = changeValue(5);
 public int changeValue(int newvalue){
     amount = newvalue;
     return amount;
+}
+public double changePrice(double newvalue){
+    price = newvalue;
+    return price;
 }
 public double countValue() {
 return(amount * price);
